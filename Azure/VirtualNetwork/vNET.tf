@@ -6,6 +6,13 @@ terraform {
       version = "2.70.0"
     }
   }
+
+  backend "azurerm" {
+    resource_group_name  = "testdemotagpolicy"
+    storage_account_name = "testunmangedisk"
+    container_name       = "statcontainer"
+    key                  = "vnet.tfstate"
+  }
 }
 
 provider "azurerm" {

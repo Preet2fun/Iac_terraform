@@ -7,3 +7,8 @@ variable "virtual_network_name" {
   type = string
   default = "virtualNetwork1-Iac"
 }
+
+variable "location_name" {
+  type = string
+  default = "West Europe"
+}
