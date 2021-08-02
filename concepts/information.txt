@@ -1,0 +1,9 @@
+we can provide input variables using below methods to terraform
+
+1) using export variable (for example TF_VAR_filename="/root/abc.txt") 
+2) by creating terraform.tfvar variable file
+3) by creating variable.auto.tfvar variable file
+4) by applying command line variable (for example terraform apply -var "filename="/root/abc.txt")
+
+if terraform get same variable from different source as mention above then it will give priority in reverse order
+they mention above (i.e env var have lowest priority where as commnd line as highest priority)
